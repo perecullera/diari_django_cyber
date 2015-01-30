@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/diari.iml" filepath="$PROJECT_DIR$/.idea/diari.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../diari 2/.idea/diari 2.iml" filepath="$PROJECT_DIR$/../diari 2/.idea/diari 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../diari2/.idea/diari 2.iml" filepath="$PROJECT_DIR$/../diari2/.idea/diari 2.iml" />
       <module fileurl="file://$PROJECT_DIR$/../home/xubuntu/project1/.idea/project1.iml" filepath="$PROJECT_DIR$/../home/xubuntu/project1/.idea/project1.iml" />
     </modules>
   </component>
