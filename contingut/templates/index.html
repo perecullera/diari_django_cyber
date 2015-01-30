@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}
+DIARI
+{% endblock %}
+
+{% block content %}
+<h3>NOTICIES</h3>
+{% for noticia in outstanding_noticies %}
+{% if forloop.first %}
+<ul id="noticia">
+{% endif %}
+
+<li>
+  <a href="">
+    {{ noticia.titol }}
+  </a>
+  <p>
+    {{ noticia.short_body }}
+  </p>
+</li>
+
+{% if forloop.last %}
+</ul>
+{% endif %}
+{% empty %}
+<h3>No hi han noticies actualment</h3>
+{% endfor %}
+{% endblock %}
+
+{% block sidebar %}
+{% for noticia in outstanding_noticies %}
+{% if forloop.first %}
+<ul id="outstanding_noticies">
+{% endif %}
+
+<li>
+  <a href="">
+    {{ noticia.titol }}
+  </a>
+</li>
+
+{% if forloop.last %}
+</ul>
+{% endif %}
+{% empty %}
+<h3>No hi han noticies actualment</h3>
+{% endfor %}
+{% endblock %}
