@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+{% load cms_tags sekizai_tags %}
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -10,6 +12,10 @@
           rel="stylesheet">
   </head>
   <body>
+     {% cms_toolbar %}
+      {% placeholder base_content %}
+      {% block base_content %}{% endblock %}
+      {% render_block "js" %}
     <h2>Blog Page</h2>
     <section id="content">
       {% block content %}
